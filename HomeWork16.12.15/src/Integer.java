@@ -4,47 +4,53 @@ import java.util.Scanner;
 
 public class Integer {
     public static void main(String[] args) {
-        int x, y, z;
+        int x = 0, y = 0, z = 0;
+        boolean k = false, l = false, mainoperation;
 
         System.out.println("Добрый день!");
 
- one:    for(;;){
+        do {
 
-     System.out.println("Введите 1 число!");
-      Scanner number1 = new Scanner(System.in);
-       if(number1.hasNextInt()){
-          x = number1.nextInt();
-       }else {
-          System.out.println("Введите число!");
-          continue one;
-       }
-
-     System.out.println("Введите 2 число!");
-     Scanner number2 = new Scanner(System.in);
-     if(number1.hasNextInt()){
-         y = number1.nextInt();
-     }else {
-         System.out.println("Введите число!");
-         continue one;
-     }
+            do {
+                System.out.println("Введите 1 число!");
+                Scanner number1 = new Scanner(System.in);
+                if (number1.hasNextInt()) {
+                    x = number1.nextInt();
+                    k = true;
+                } else {
+                    System.out.println("Введите число!");
+                }
+            } while (k != true);
 
 
-     if(-1000 > x || x > 1000 || -1000 > y || y > 1000  ) {
-         System.out.println("Введите число поменьше!");
-         continue one;
-     }else if (x != y) {
-         x = 0;
-         y= 0;
-         System.out.println("1ое число  = " + x + " ; 2ое число = " + y);
-         break;
-     }else {
-         z = x + y;
-         x = z;
-         y= z;
-         System.out.println("1ое число  = " + x + " ; 2ое число = " + y);
-         break ;
-     }
+            do {
+                System.out.println("Введите 2 число!");
+                Scanner number2 = new Scanner(System.in);
+                if (number2.hasNextInt()) {
+                    y = number2.nextInt();
+                    l = true;
+                } else {
+                    System.out.println("Введите число!");
+                }
+            } while (l != true);
 
- }
+
+            if (-1000 > x || x > 1000 || -1000 > y || y > 1000) {
+                System.out.println("Введите число поменьше!");
+                mainoperation = false;
+
+            }else {
+                mainoperation = true;
+            }
+
+            z = (x != y) ? 0 : (x + y);
+        }while (mainoperation != true);
+
+            System.out.println("1ое число  = " + z + " ; 2ое число = " + z);
+
+
+
+
+
     }
 }
