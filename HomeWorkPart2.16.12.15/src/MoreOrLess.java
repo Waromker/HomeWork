@@ -44,7 +44,7 @@ public class MoreOrLess {
                 continue one;
             }
 
-            max = (x >z )? x :(z > y)? z: y;
+            max = (x > z) ? ((x > y)? x : y):(z > y)? z : y;
 
             System.out.println("Максимальное число - " + max);
             break ;
