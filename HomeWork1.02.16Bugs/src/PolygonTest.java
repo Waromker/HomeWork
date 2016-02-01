@@ -6,12 +6,12 @@ public class PolygonTest {
         int[] yPoints = {2, 2, -2, -2};
 
         Polygon polygon = new Polygon(xPoints, yPoints, xPoints.length);
-        for (int i = -20;;i++){
-            for (int j = -20;;j++) {
+        for (int i: xPoints){
+            for (int j : yPoints) {
 
                 boolean checkPoint = polygon.contains(i, j);
             //    System.out.print(checkPoint);//why false?) -> should be true)) нет совпадений в этих точка и я их не могу найти
-                // я видимо не совсем понимаю построение многоугольника в пространстве
+                // нашел -4 и -4 =)
                 if (checkPoint){
                     System.out.println(i+j);
                     break;
