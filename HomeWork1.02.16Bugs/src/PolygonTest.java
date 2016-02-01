@@ -11,9 +11,11 @@ public class PolygonTest {
 
                 boolean checkPoint = polygon.contains(i, j);
             //    System.out.print(checkPoint);//why false?) -> should be true)) нет совпадений в этих точка и я их не могу найти
-                // нашел -4 и -4 =)
+                // нашел -2 и -2 =)
                 if (checkPoint){
-                    System.out.println(i+j);
+                    System.out.println(i);
+                    System.out.println(j);
+
                     break;
                 }
             }}
