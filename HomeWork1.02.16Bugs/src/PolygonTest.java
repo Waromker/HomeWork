@@ -11,7 +11,7 @@ public class PolygonTest {
 
                 boolean checkPoint = polygon.contains(i, j);
             //    System.out.print(checkPoint);//why false?) -> should be true)) нет совпадений в этих точка и я их не могу найти
-                // я видимо не совсем понимаю построение многоугольника в пространсвте
+                // я видимо не совсем понимаю построение многоугольника в пространстве
                 if (checkPoint){
                     System.out.println(i+j);
                     break;
