@@ -2,13 +2,13 @@ package tech;
 
 public interface Fly {
 
-    void nameFly(String name);
+    void printNameFly(String name);
 
-    int speedFly(String name);
+    int getSpeedFly(String name);
 
-    int weightweight(String name);
+    int getWeightweight(String name);
 
-    int valueOfPassengers(String name);
+    int getValueOfPassengers(String name);
 
     void poitOfSafety();
 }

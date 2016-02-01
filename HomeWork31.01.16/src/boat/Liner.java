@@ -6,12 +6,12 @@ public class Liner extends BoatType  {
     }
 
     @Override
-    void name() {
+    void printName() {
         System.out.println("This boat for tourists");
     }
 
     @Override
-    int passengers() {
+    int getValueOfPassengers() {
         int x = 3550;
         return x;
     }

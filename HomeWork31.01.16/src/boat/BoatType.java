@@ -5,9 +5,9 @@ abstract public class BoatType {
     int weight;
     int speed;
 
-   abstract void name();
+   abstract void printName();
 
-    abstract int passengers();
+    abstract int getValueOfPassengers();
 
     BoatType(int weight, int speed){
         this.weight = weight;

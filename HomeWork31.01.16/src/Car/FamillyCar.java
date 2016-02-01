@@ -1,14 +1,14 @@
-package Car;
+package car;
 
 
 public class FamillyCar extends Car {
     @Override
-    void nameOfCar() {
+    void printNameOfCar() {
         System.out.println("This is familly-Car");
     }
 
     @Override
-    int speedAtTheMoment() {
+    int getSpeedAtTheMoment() {
         int x;
         x = (maxSpeed- (minSpeed * 100)) /maxValueOfPassenger;
         return x;

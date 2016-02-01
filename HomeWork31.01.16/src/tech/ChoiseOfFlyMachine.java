@@ -14,10 +14,13 @@ public class ChoiseOfFlyMachine {
             }else {
                 choiseOfMachine = "AH-24";
             }
-            newObject.nameFly(choiseOfMachine);
-            System.out.println("Speed of " +choiseOfMachine+ " = " + newObject.speedFly(choiseOfMachine));
-            System.out.println("Weight of " +choiseOfMachine+ " = " + newObject.weightweight(choiseOfMachine));
-            System.out.println("Value of Passengers in " +choiseOfMachine+ " = " + newObject.valueOfPassengers(choiseOfMachine));
+            newObject.printNameFly(choiseOfMachine);
+            System.out.println("Speed of " +choiseOfMachine+ " = " + newObject.getSpeedFly(choiseOfMachine));
+            System.out.println("Weight of " +choiseOfMachine+ " = " + newObject.getWeightweight(choiseOfMachine));
+            
+            System.out.println("Value of Passengers in " +choiseOfMachine+ " = " +
+                    newObject.getValueOfPassengers(choiseOfMachine));
+
             System.out.println();
         }
 

@@ -1,17 +1,23 @@
-package Car;
+package car;
+
+
 
 public class CarChoise {
     public static void main(String[] args) {
-        SportCar sportCar = new SportCar();
-        FamillyCar famillyCar = new FamillyCar();
+        Car carsInfo[] = {
+                new SportCar(),
+                new FamillyCar(),
 
-        for (int i = 0; i < 2; i++) {
-            if (i == 0) {
-                famillyCar.nameOfCar();
-                System.out.println(famillyCar.speedAtTheMoment());
+        };
+
+
+        for (Car car: carsInfo) {
+            if (car instanceof FamillyCar) {
+                car.printNameOfCar();
+                System.out.println(car.getSpeedAtTheMoment());
             } else {
-                sportCar.nameOfCar();
-                System.out.println(sportCar.speedAtTheMoment());
+                car.printNameOfCar();
+                System.out.println(car.getSpeedAtTheMoment());
             }
         }
     }

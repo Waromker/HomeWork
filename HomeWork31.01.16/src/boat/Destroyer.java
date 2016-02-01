@@ -7,12 +7,12 @@ public class Destroyer extends BoatType {
     }
 
     @Override
-    void name() {
+    void printName() {
         System.out.println("This is millitary boat - it is Destroyer ");
     }
 
     @Override
-    int passengers() {
+    int getValueOfPassengers() {
         int x = 120;
         return x;
     }

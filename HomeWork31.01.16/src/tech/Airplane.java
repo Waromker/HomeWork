@@ -5,12 +5,12 @@ public class Airplane implements Fly {
     String name;
 
     @Override
-    public void nameFly(String name) {
+    public void printNameFly(String name) {
         System.out.println("This is the name of plane - " + name);
     }
 
     @Override
-    public int speedFly(String name) {
+    public int getSpeedFly(String name) {
         int x = 0;
         this.name = name;
         if (this.name == "Boing"){
@@ -22,7 +22,7 @@ public class Airplane implements Fly {
     }
 
     @Override
-    public int weightweight(String name) {
+    public int getWeightweight(String name) {
         int x = 0;
         this.name = name;
         if (this.name == "Boing"){
@@ -34,7 +34,7 @@ public class Airplane implements Fly {
     }
 
     @Override
-    public int valueOfPassengers(String name) {
+    public int getValueOfPassengers(String name) {
         int x = 0;
         this.name = name;
         if (this.name == "Boing"){

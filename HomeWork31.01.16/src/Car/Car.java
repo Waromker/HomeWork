@@ -1,9 +1,9 @@
-package Car;
+package car;
 
 
 public abstract class Car implements CarInfo {
 
-    abstract void nameOfCar();
-    abstract int speedAtTheMoment();
+    abstract void printNameOfCar();
+    abstract int getSpeedAtTheMoment();
 
 }
