@@ -25,8 +25,7 @@ public class ArrayTest {
 //            if (num[j] > num[j+1]) { тут если я не ошибаюсь, то мы выпадали
 
         for (int j:num){
-            if (min < j){
-            } else {
+            if (min > j){
                 min= j;
                 lowestNum = j;
             }
