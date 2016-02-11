@@ -12,7 +12,7 @@ public class EmployeerAndBoss {
     static Logger logger = Logger.getLogger(EmployeerAndBoss.class.getName());
 
     public  void loggerMethod(String info) throws IOException {
-        Handler handler = new FileHandler("./logsOfEmployeer",1024,5);
+        Handler handler = new FileHandler("./logsOfEmployeer",1024,5,true);
         handler.setFormatter(new SimpleFormatter());
         logger.addHandler(handler);
         logger.info(info);
